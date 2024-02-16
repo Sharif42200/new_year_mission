@@ -1,0 +1,114 @@
+/* merriweather font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+/* shared styles */
+*{
+    font-family: "Merriweather", serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1320px;
+    width: 80%;
+    margin: 50px auto 100px auto;
+}
+.title{
+    font-size: 70px;
+    font-weight: 900;
+    color: rgb(233, 223, 223);
+}
+.sub-title{
+    font-size: 30px;
+    color: rgb(233, 223, 223);;
+}
+.primary-title{
+    font-size: 40px;
+    font-weight: 700;
+}
+.primary-paragraph{
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+.secondary-paragraph{
+    font-size: 16px;
+    color: white;
+}
+.btn-primary{
+    padding: 26px 32px;
+    border: none;
+    border-radius: 5px;
+    background-color: gold;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    background-color: aquamarine;
+}
+
+/*  */
+/* banner styles */
+.banner{
+    min-height: 100%;
+    background-image: url(../images/banner_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+.banner .banner-texts{
+    text-align: center;
+    padding: 170px 300px;
+}
+.banner .banner-texts *{
+    margin-bottom: 15px;
+}
+
+/* banner end */
+
+/* offer styles */
+
+.offer-part{
+    max-width: 750px;
+    margin: 0 auto;
+}
+.offer-part .offer-details{
+    text-align: center;
+}
+.offer-part .offer-details h2{
+    margin-bottom: 40px;
+}
+.offer-part .offer-details div{
+    margin-bottom: 40px;
+}
+.offer-title{
+    color: red;
+}
+#holiday-deals{
+    color: red;
+}
+/* offer end */
+
+/* welcome styles starts */
+.welcome{
+    /* min-height: 100%; */
+    background-image: url(../images/Vectorrr.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.welcome .welcome-texts{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.welcome .welcome-texts *{
+    margin-bottom: 24px;
+}
+.welcome .welcome-img{
+    max-width: 300px;
+    margin: 0 auto;
+}
+.welcome .welcome-img img{
+    width: 100%;
+}
+/* welcome styles end */
