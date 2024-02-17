@@ -1,63 +1,79 @@
 /* merriweather font */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 /* shared styles */
-*{
+* {
     font-family: "Merriweather", serif;
     margin: 0;
     padding: 0;
 }
-.container{
+
+.container {
     max-width: 1320px;
     width: 80%;
     margin: 50px auto 100px auto;
 }
-.title{
-    font-size: 70px;
+
+.title {
+    font-size: 60px;
     font-weight: 900;
-    color: rgb(233, 223, 223);
+    color: white;
 }
-.sub-title{
+
+.sub-title {
     font-size: 30px;
-    color: rgb(233, 223, 223);;
+    color: rgb(233, 223, 223);
+    ;
 }
-.primary-title{
+
+.primary-title {
     font-size: 40px;
     font-weight: 700;
 }
-.primary-paragraph{
+
+.primary-paragraph {
     font-size: 20px;
     font-weight: 500;
-    
+
 }
-.secondary-paragraph{
+
+.secondary-paragraph {
     font-size: 16px;
-    color: white;
+    color: rgba(7, 2, 17, 0.6);
 }
-.btn-primary{
-    padding: 26px 32px;
+
+.btn-primary {
+    padding: 16px 32px;
     border: none;
     border-radius: 5px;
-    background-color: gold;
+    color: white;
+    background-color: red;
+    font-size: 15px;
     cursor: pointer;
 }
-.btn-primary:hover{
-    background-color: aquamarine;
+
+.btn-primary:hover {
+    background-color: gold;
+    color: black;
 }
 
 /*  */
 /* banner styles */
-.banner{
-    min-height: 100%;
+.banner {
+    /* min-height: 100%; */
+    height: 500px;
     background-image: url(../images/banner_image.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
+    background-size: contain;
+    
 }
-.banner .banner-texts{
+
+.banner .banner-texts {
     text-align: center;
-    padding: 170px 300px;
+    padding: 150px 200px;
 }
-.banner .banner-texts *{
+
+.banner .banner-texts * {
     margin-bottom: 15px;
 }
 
@@ -65,50 +81,230 @@
 
 /* offer styles */
 
-.offer-part{
+.offer-part {
     max-width: 750px;
     margin: 0 auto;
 }
-.offer-part .offer-details{
+
+.offer-part .offer-details {
     text-align: center;
 }
-.offer-part .offer-details h2{
+
+.offer-part .offer-details h2 {
     margin-bottom: 40px;
 }
-.offer-part .offer-details div{
+
+.offer-part .offer-details div {
     margin-bottom: 40px;
 }
-.offer-title{
+.offer-part .offer-details img{
+    width: 100%;
+}
+.offer-title {
     color: red;
 }
-#holiday-deals{
+
+#holiday-deals {
     color: red;
 }
+
 /* offer end */
 
 /* welcome styles starts */
-.welcome{
-    /* min-height: 100%; */
+.welcome {
     background-image: url(../images/Vectorrr.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    background-size: contain;
+    height: 500px;
 }
-.welcome .welcome-texts{
+
+.welcome .welcome-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.welcome .welcome-box .welcome-texts {
     max-width: 600px;
     margin: 0 auto;
 }
-.welcome .welcome-texts *{
-    margin-bottom: 24px;
+
+.welcome .welcome-box .welcome-texts p {
+    color: white;
 }
-.welcome .welcome-img{
-    max-width: 300px;
+
+.welcome .welcome-box .welcome-texts * {
+    margin-bottom: 20px;
+}
+
+.welcome .welcome-box .welcome-img {
+    max-width: 220px;
     margin: 0 auto;
 }
-.welcome .welcome-img img{
+
+.welcome .welcome-box .welcome-img img {
     width: 100%;
 }
+
 /* welcome styles end */
+
+/* venue styles */
+.venue{
+    border-radius: 16px;
+    background: linear-gradient(180.00deg, rgba(255, 0, 0, 0.1),rgba(255, 0, 0, 0) 100%);
+}
+.venue-box{
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0;
+}
+.venue-text{
+    color: red;
+}
+.venue-box *{
+    margin-bottom: 15px;
+}
+/* venue styles end */
+
+/* coming soon styles */
+.coming-soon {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: aqua; */
+}
+.soon-details {
+    max-width: 300px;
+    /* margin: 0 auto; */
+}
+.soon-details *{
+    margin-bottom: 15px;
+}
+.soon-img {
+    max-width: 400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 10px solid rgb(255, 0, 0);
+    border-radius: 50%;
+    padding: 30px;
+}
+.soon-img img{
+    width: 100%;
+}
+.soon-details-2 {
+    max-width: 200px;
+    /* margin: 0 auto; */
+    margin-top: 100px;
+}
+#two-4{
+    color: rgb(255, 0, 0);
+}
+.new-year-icon{
+    max-width: 100px;
+    
+}
+.new-year-icon img{
+    width: 100%;
+}
+.soon-details-2 *{
+    margin-bottom: 15px;
+    
+}
+/* coming soon styles end */
+
+/* portfolio styles */
+.portfolio-container .portfolio-texts * {
+    margin-bottom: 20px;
+}
+
+.portfolio-container .portfolio-img img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.portfolio-container .portfolio-img .fadein img {
+    opacity: 1;
+    transition: 1 ease;
+}
+
+.portfolio-container .portfolio-img .fadein img:hover {
+    opacity: 0.5;
+    transition: 1 ease;
+}
+
+.portfolio-container .portfolio-img {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+/* portfolio styles end */
+
+/* <!-- subscribe section --> */
+.subscribe-container {
+    background-color: rgba(255, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.subscribe-container .subscribe-details {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.subscribe-container .subscribe-details * {
+    margin-bottom: 16px;
+}
+
+.subscribe-container .subscribe-details .subscribe-btn {
+    text-align: center;
+    display: flex;
+    gap: 5px;
+}
+
+.subscribe-container .subscribe-details .subscribe-btn input {
+    font-size: 15px;
+    flex-grow: 1;
+    padding: 0 30px;
+    border-radius: 50px 0 0 50px;
+    border: none;
+    outline: none;
+}
+
+.subscribe-container .subscribe-details .subscribe-btn button {
+    border-radius: 0px 50px 50px 0px;
+}
+
+/* subscribe end */
+
+.footer-part {
+    background-color: rgb(7, 2, 17);
+}
+
+.footer-box {
+    padding: 100px 0;
+    margin-bottom: 0;
+}
+
+.address {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.adress-text {
+    color: white;
+}
+
+.social-icon {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
